@@ -1,13 +1,13 @@
 {
-  "name": "ssr-app",
+  "name": "movies-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "TMDB_API_KEY=ASDF ng serve",
+    "build": "TMDB_API_KEY=ASDF ng build && cp ./Procfile dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ssr-app": "node dist/ssr-app/server/server.mjs"
+    "serve:ssr:ssr-app": "node dist/server/server.mjs"
   },
   "private": true,
   "dependencies": {

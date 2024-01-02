@@ -1,0 +1,1 @@
+web: node node dist/server/server.mjs
